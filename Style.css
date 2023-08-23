@@ -5,37 +5,56 @@
 }
 
 .flex-container {
-  height: 400px;
+  height: 300px;
   display: flex;
   background-color: rgb(97, 85, 85);
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   /* is always on the main axis */
-  justify-content: end;
+  /* justify-content: ; */
   /* is always on the cross axis */
-  align-items: center;
-  align-self: center;
+  /* align-items: center; */
+  
 }
 
-.item1,
-.item2,
-.item3 {
+.item{
   margin: 10px;
-  width: 100px;
+  flex-basis: 100px;
   height: 100px;
   background: #235d23;
   color: azure;
-  text-align: center;
   text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+.item:nth-of-type(1){
+order: 2;
+flex-grow: 2;
+flex-basis: 200px;
+}
+
+.item:nth-of-type(2){
+  order: 3;
+  flex-grow: 1;
+}
+
+.item:nth-of-type(3){
+  order: 1;
+  flex-grow: 1;
+}
+
 
 /* .item3 {
   align-self: start;
-}
+} */
 
-.item2 {
+/* .item2 {
   align-self: center;
-}
+} */
 
-.item1 {
+/* .item1 {
   align-self: end;
 } */
