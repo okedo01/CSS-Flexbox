@@ -1,2 +1,2 @@
 
-How to style HTML pages using CSS Grid & Flexbox
+How to style HTML pages using CSS Flexbox
