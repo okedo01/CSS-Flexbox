@@ -5,56 +5,33 @@
 }
 
 .flex-container {
-  height: 300px;
+  flex-basis: 100px;
   display: flex;
+  justify-content: left;
   background-color: rgb(97, 85, 85);
-  flex-wrap: wrap;
-  /* flex-direction: column; */
-  /* is always on the main axis */
-  /* justify-content: ; */
-  /* is always on the cross axis */
-  /* align-items: center; */
-  
 }
 
-.item{
+.item {
+  flex: 1;
   margin: 10px;
-  flex-basis: 100px;
-  height: 100px;
+  height: 50px;
   background: #235d23;
   color: azure;
   text-decoration: underline;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.item:nth-of-type(1){
-order: 2;
-flex-grow: 2;
-flex-basis: 200px;
+.item:nth-of-type(1) {
+ 
+  
 }
 
-.item:nth-of-type(2){
-  order: 3;
-  flex-grow: 1;
+.item:nth-of-type(2) {
+ 
 }
 
-.item:nth-of-type(3){
-  order: 1;
-  flex-grow: 1;
+.item:nth-of-type(3) {
+
 }
-
-
-/* .item3 {
-  align-self: start;
-} */
-
-/* .item2 {
-  align-self: center;
-} */
-
-/* .item1 {
-  align-self: end;
-} */
